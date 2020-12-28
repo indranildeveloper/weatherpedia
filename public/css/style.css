@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-bg: #2a3842;
+  --main-color: #0097e6;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.main_menu {
+  background-color: var(--main-bg);
+}
+
+.fa-snowflake {
+  transition: all linear;
+  animation: rot 5s linear infinite;
+  color: var(--main-color);
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Main Header */
+
+.main_header_left {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main_header_left p {
+  font-size: 20px;
+}
+.main_header_right {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.temp_form {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem auto;
+  max-width: 700px;
+}
+
+.tempInfo {
+  font-size: 1.3rem;
+  background-color: #2a52be;
+  border-radius: 10px;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.top_layer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007fff;
+  border-radius: 10px 10px 0 0;
+  padding: 1rem 1rem 0 1rem;
+  margin-bottom: 20px;
+}
+
+.main_layer {
+  padding: 20px;
+}
+
+.middle_layer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#temp {
+  font-size: 2em;
+}
+
+#temp_status {
+  height: 100px;
+  width: 100px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  margin-top: auto;
+  background-color: var(--main-bg);
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main_header_left {
+    height: auto;
+    margin: 2rem 0;
+    align-items: center;
+    text-align: center;
+  }
+  .main_header_right {
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .temp_form {
+    margin-bottom: 1rem;
+  }
+}

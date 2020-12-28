@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>headerlinks}}
+  </head>
+  <body>
+    <!-- Navbar -->
+    {{>navbar}}
+
+    <!-- Main Area -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <div class="col-md-6 col-12 main_header_right">
+              <img
+                class="img-fluid"
+                src="./images/undraw_weather_notification_4sbo.png"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6 col-12 main_header_left">
+              <p>About Me</p>
+              <h1 class="text-capitalize">
+                Hello I am
+                <span class="text-primary">Indranil Halder,</span> Creator of
+                WeatherPedia and
+                <span class="text-info">Full-Stack Developer</span>
+              </h1>
+              <a href="/"
+                ><button class="btn btn-primary btn-lg mt-4">
+                  Learn More <i class="fa fa-arrow-right"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Footer -->
+  {{>footer}}
+
+    <!-- Bootstrao JS -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>

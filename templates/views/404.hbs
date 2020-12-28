@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>headerlinks}}
+  </head>
+  <body>
+    <!-- Navbar -->
+    {{>navbar}}
+
+    <!-- Main Area -->
+    <div class="container-fluid text-center main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <div class="col-md-6 col-12 container">
+              <img
+                class="img-fluid"
+                src="./images/404.png"
+                alt=""
+              />
+           
+              <p>Welcome To WeatherPedia</p>
+              <h1 class="text-capitalize">
+                {{errorMsg}}
+              </h1>
+              <a href="/"
+                ><button class="btn btn-primary btn-lg mt-4">Go Back<i class="fa fa-arrow-right"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Footer -->
+  {{>footer}}
+
+    <!-- Bootstrao JS -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>
